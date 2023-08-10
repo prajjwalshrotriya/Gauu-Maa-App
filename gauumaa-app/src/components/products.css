@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+#products{
+    width: 50%;
+    height: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+.pro{
+    width: 35%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+.pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+.pdiscription{
+    text-align: start;
+    padding: 10px 0;
+}
+.pdiscription p,.pdiscription details{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+.pdiscription p span{
+    color: #2EB62C;
+    font-weight: 600;
+}
+.pro a{
+    display: block;
+    width: 110px;
+    height: 30px;
+    margin: 5px auto;
+    padding-top: 7px;
+    text-decoration: none;
+    background: #2EB62C;
+    border-radius: 10px;
+    color: #fff;
+}
+.pro a:hover{
+    box-shadow: 0 0 5px #2EB62C,
+    0 0 25px #2EB62C,0 0 50px #2EB62C,
+    0 0 10px #2EB62C,0 0 10px #2EB62C;
+}
+.pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+.top-text h2{
+    font-size: 70px;
+    margin: 15px 0;
+}
+.top-text p{
+    font-size: 30px;
+    font-weight: 600;
+    color: #2EB62C;
+}
+#price{
+    color: #05386b;
+    font-weight: 600;
+}
+#nutri:hover{
+    color: #2EB62C;
+}
+#products .pcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+
+@media (min-width: 320px) and (max-width: 426px){
+    .top-text h2 {
+        font-size: 6vw;
+}
+.top-text p {
+    font-size: 4vw;
+}
+.pdiscription p, .pdiscription details {
+    font-size: 4vw;
+}
+.pro {
+    min-width: 55vw;
+}
+}
+
+@media (min-width: 427px) and (max-width: 768px){
+    .top-text h2 {
+        font-size: 4vw;
+}
+.top-text p {
+    font-size: 2vw;
+}
+#products .pcontainer{
+    gap: 1vw;
+}
+#products{
+    width: 70%;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .top-text h2 {
+        font-size: 4vw;
+}
+.top-text p {
+    font-size: 2vw;
+}
+#products .pcontainer{
+    gap: 1vw;
+}
+#products{
+    width: 60%;
+}
+}
+

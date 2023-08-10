@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+  }
+  body{
+    width: 100%;
+    height: 100%;
+  }
+  marquee{
+    color: #2EB62C;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .home{
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  video{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -99;
+    filter: brightness(70%);
+  
+  }
+  #h-text {
+    position: absolute;
+    top: 45%;
+    left: 6%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+  }
+  #h-text h1{
+    font-size: 100px;
+    font-weight: 800;
+    position: relative;
+  }
+  #h-text h1::before{
+    content: "Gauu Maa";
+    color: #000;
+    position: absolute;
+    top: -2%;
+    left: -2%;
+    -webkit-text-stroke: 0.1pt #2EB62C;
+    z-index: -1;
+  }
+  #h-text h3 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  #h-text p{
+    font-size: 20px;
+    font-weight: 500;
+    width: 40%;
+    margin-top: 5px;
+  }
+  .slideer{
+    width: 70%;
+    height: 70vh;
+    background-image: url(../img/gauuphoto.jpg);
+    background-size: 100% 100%;
+    margin: auto;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    animation: changeimg 10s step-start infinite;
+    
+  }
+  @keyframes changeimg{
+    0%{
+      background-image: url(../img/gauuphoto.jpg);
+    }
+    25%{
+      background-image: url(../img/1.jpg);
+    }
+    50%{
+      background-image: url(../img/3.jpg);
+    }
+    75%{
+      background-image: url(../img/gauuphoto.jpg);
+    }
+    100%{
+      background-image: url(../img/2.jpg);
+    }
+  }
+
+  /* media queries */
+
+  @media (min-width: 320px) and (max-width: 426px){
+    #h-text {
+        top: 40vh;
+        left: 0vw; 
+    }
+    #h-text h1 {
+        font-size: 6vw;
+        font-weight: 500;
+    }
+    #h-text h3 {
+        font-size: 3vw;
+        font-weight: 300;
+    }
+    #h-text p {
+        font-size: 2vw;
+        font-weight: 400;
+    }
+    .slideer {
+        width: 80%;
+        height: 40vh;
+    }
+    video{
+        width: 100%;
+        height: 50vh;
+      
+      }
+      .home{
+        width: 90%;
+      }
+      marquee {
+        font-weight: 500;
+    }
+  }
+
+  @media (min-width: 427px) and (max-width: 768px){
+      #h-text {
+          top: 38vh;
+          left: 0vw; 
+      }
+      #h-text h1 {
+          font-size: 9vw;
+          font-weight: 700;
+      }
+      #h-text h3 {
+          font-size: 4vw;
+          font-weight: 500;
+      }
+      #h-text p {
+          font-size: 2vw;
+          font-weight: 400;
+      }
+      marquee {
+          font-weight: 500;
+      }
+      .slideer {
+          height: 60vh;
+      }
+      video{
+        height: 70vh;
+      
+      }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px){
+    #h-text {
+        top: 47vh;
+        left: 0vw; 
+    }
+}

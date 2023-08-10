@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+#blog{
+    padding: 8vw 12vw 0 12vw;
+    margin-bottom: 5.5vw;
+    z-index: -99;
+
+}
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 7vw;
+}
+#blog .blog-img{
+    width: 50%;
+    margin-right: 7vw;
+    
+}
+#blog img{
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+#blog .blog-details{
+    width: 50%;
+}
+#blog .blog-details button{
+    border: none;
+    background: transparent;
+    font-size: 1.5vw;
+    margin-top: 0.5vw;
+    cursor: pointer;
+}
+#blog .blog-details button:hover{
+    color: #2EB62C;
+}
+#blog .blog-box h1{
+    position: absolute;
+    top: -2.2vw;
+    left: 0;
+    font-size: 4vw;
+font-weight: 700;
+color: #c9cbce;
+z-index: -9;
+}
+.blog-details h4{
+    margin-bottom: 1vw;
+    font-size: 2vw;
+    color: black;
+}
+.blog-details p{
+    font-size: 1.5vw;
+    line-height: 1;
+}
+
+
+@media (min-width: 320px) and (max-width: 426px){
+    #blog .blog-box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #blog .blog-img {
+        width: 60%;
+        height: 20vh;
+    }
+    #blog img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #blog .blog-details {
+        margin-top: 2vw;
+        margin-right: 6vw;
+    }
+    .blog-details h4 {
+        font-size: 2.5vw;
+    }
+    .blog-details p {
+        font-size: 2vw;
+    }
+    #blog .blog-details button {
+        font-size: 2vw;
+    }
+    #blog .blog-box h1{
+        left: 12vw;
+    }
+
+}
